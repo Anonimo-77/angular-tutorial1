@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let user of users">
+        <label style="display: inline;"><label style="font-weight: {{ (user.pro) ? 'bold' : 'normal' }}">{{ user.username }}: <span style="font-style: italic; color: grey;">{{ (user.age >= 18) ? "Adult" : "Younger" }}</span></label><div *ngIf="user.pro" style="background-color: yellow; font-family: 'Comic Sans MS', cursive, sans-serif; font-weight: bold; color: white; border-radius: 3px; width: 40px; height: 22px;">PRO</div></label>
+    </li>
+</ul>
